@@ -1,7 +1,14 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Victor's resume
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css' media='all')
+    link(rel='stylesheet', href='/stylesheets/print.css' media='print')
   body
-    block content
+    .container-fluid
+        .row
+            include header
+            block content
+            include footer
