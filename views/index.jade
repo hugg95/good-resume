@@ -1,5 +1,112 @@
 extends layout
 
 block content
-    .col-md-6.col-md-offset-3.main-box
-        h4 Name
+    .container-fluid
+        .row
+            .col-md-6.col-md-offset-3.resume-panel
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-check
+                        span  基本信息
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-user
+                            span  李念超
+                        p.text-muted
+                            .glyphicon.glyphicon-earphone
+                            span  15618906329
+                        p.text-muted
+                            .glyphicon.glyphicon-send
+                            span  nianchaoli@msn.cn
+                        p.text-muted
+                            .glyphicon.glyphicon-map-marker
+                            span  现居上海，即将去北京
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-flag
+                        span  意向职位
+                .col-md-9
+                    .resume-item
+                        ul.list-inline
+                            li 全栈开发工程师 | 北京
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-console
+                        span  专业技能
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-record
+                            span 两年JavaScript使用经验，掌握ECMAScript5、有AngularJs和React的项目开发经验，钻研过Atom-shell(Electron)技术，自认为掌握的比较熟练。jQuery、zepto此类库的使用也非常频繁，
+                                |熟练使用bootstrap，了解css3部分特性。能单独进行前端系统的设计开发和重构；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉NodeJs及一些框架／库的使用，如Express、Mysql、Sequelize，bluebird等，对npm、bower、grunt、gulp的使用也非常熟练；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  精通Chrome扩展插件的开发，熟悉大部分国内浏览器平台的插件兼容开发；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉AMD，CommonJS规范，对于RequireJs、webpack的使用非常熟练，在实际项目开发中有比较好的实践；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟练使用Java编程，熟悉Spring、MyBatis等许多Java库以及框架，熟练使用gradle，maven等构建工具，良好的编码规范；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  对前端性能优化有一定了解，了解WebKit、V8垃圾回收机制，对跨浏览器兼容有一定经验；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉ActionScript3，有实际项目使用经验；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉数据可视化，有使用HighCharts进行数据可视化的开发经验；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉PHP，有Yii框架的实际项目经验，使用Discuz并经过简单二次开发搭建过公司产品论坛以及对接公司用户数据。；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  喜欢折腾Linux，工作环境为Ubuntu12.04，熟悉nginx负载、apache虚拟主机的配置；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉SVN，熟练使用Git，Git爱好者，最早在公司建议使用Git；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉mysql，mongodb，redis，能写较为复杂的mysql查询；
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-calendar
+                        span  工作经历
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-record
+                            span  2013-07 - 2014-03 群硕软件开发有限公司
+                            :markdown
+                                > 公司本身是一家外包型公司，开始尝试自己打磨产品，做的是一系列户外运动类型的app，而我们团队主要做的是它们的门户网站，可以支持第三方账户如新浪微博登录，用户可以在网站上follow其他人，可以发布自己的户外运动游记，可以评论别人的文章等。我负责的部分是用户发布文章以及评论功能以及用户主页展示，使用的后台语言为PHP，数据库当时选用的mongo，前端javascript部分使用的requirejs+jquery。我觉得在一家外包公司里做自己的产品是一件有意思的事情，当时的leader也带给了我不少的进步。
+                        p
+                            .glyphicon.glyphicon-record
+                            span  2014-03 - 现在 上海名传信息技术有限公司
+                            :markdown
+                                > 1. 负责公司一款CRM软件的前后端开发（团队规模小），页面复杂度较小，当时考虑到只要架构能做到模块化开发然后写好函数库就可以了，AMD规范也正盛行，因此最终选择使用__RequireJs__搭建了这款软件的前端开发框架，陆续引入了jquery、moment、highcharts等lib，自己再封装一部分通用的函数，团队协作开发效率很好。这个时候更多的是开始去考虑一些代码可读性以及性能优化的问题，比如jquery的链式写法，选择器的性能，使用documentFragment来做批量的DOM修改等。此外还独立开发了一个__jquery插件形式的日期选择插件（https://github.com/lncwwn/jquery-date-picker）__，可以支持日期区间选择。
+                                > 2. 负责公司内主打产品（一款淘内SEO优化软件）的前端开发工作，根据实际业务及团队情况选择了__AngularJs__来做模块化开发，基于其方便的directive，封装了时间选择、数据可视化图表（基于__highcharts__）、前后端分页等组件，此外还抽取出了一个通用函数库来减少重复代码，比如搜索词高亮功能和数据前端导出功能，取得了不错的效果。保证了项目的迭代进度同时也使得代码具有不错的可维护性。
+                                > 3. 负责公司一款淘内SEO优化工具插件版本的开发。插件目标是使用在基于webkit内核的浏览器上的，如Chrome以及大部分采用webkit内核的国产浏览器。插件由我独立开发，确定需求后发现交互部分相对简单，于是只引入了jquery方便DOM以及AJAX操作。插件有一个前台页面嵌入到宿主页面（淘宝）用于用户交互，用户事件会通过chrome api提供的消息机制发送给background模块，background作出相应的响应（比如实际发送AJAX请求并处理请求数据的部分我放在了backround）。各浏览器对应的插件维护在不同的git分支来保证各版本的差异和独立。插件发布后挺受欢迎，刚开始每天曾长基本在200左右。
+                                > 4. 负责公司BI产品某独立模块的前端开发，使用ReactJs+reflux+webpack
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-education
+                        span  教育经历
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-record
+                            span  2009-09 - 2013-06 北方民族大学  数学与应用数学   本科
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-heart-empty
+                        span  简介｜爱好
+                .col-md-9
+                    .resume-item
+                        p
+                            | 首先我想说我是一个及其负责的工作伙伴，宁愿加班也不愿给小伙伴埋坑，我觉得这是我最自豪的地方。其次我的想法和创意比较丰富，在工作中不会局限于程序员的思维方式，也会主动积极的去考虑产品设计方面的问题并提出意见。我也认为自己是一个喜欢折腾的程序员，喜欢写酷酷的产品，工作之余也喜欢写自己的项目，由于我超爱骑行这类运动，因此有一个使用nodejs搭建的骑行活动分享网站自己正在细细打磨，正在开发中！
+

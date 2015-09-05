@@ -1,0 +1,115 @@
+extends layout
+
+block content
+    .container-fluid
+        .row
+            .col-md-6.col-md-offset-3.resume-panel
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-check
+                        span  基本信息
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-user
+                            span  李念超
+                        p.text-muted
+                            .glyphicon.glyphicon-earphone
+                            span  15618906329
+                        p.text-muted
+                            .glyphicon.glyphicon-send
+                            span  nianchaoli@msn.cn
+                        p.text-muted
+                            .glyphicon.glyphicon-map-marker
+                            span  现居上海，即将去北京
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-flag
+                        span  意向职位
+                .col-md-9
+                    .resume-item
+                        ul.list-inline
+                            li 全栈开发工程师 | 北京
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-console
+                        span  专业技能
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-record
+                            span 两年JavaScript使用经验，掌握ECMAScript5、有AngularJs和React的项目开发经验，钻研过Atom-shell(Electron)技术，自认为掌握的比较熟练。jQuery、zepto此类库的使用也非常频繁，
+                                |熟练使用bootstrap，了解css3部分特性。能单独进行前端系统的设计开发和重构；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉NodeJs及一些框架／库的使用，如Express、Mysql、Sequelize，bluebird等，对npm、bower、grunt、gulp的使用也非常熟练；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  精通Chrome扩展插件的开发，熟悉大部分国内浏览器平台的插件兼容开发；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉AMD，CommonJS规范，对于RequireJs、webpack的使用非常熟练，在实际项目开发中有比较好的实践；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟练使用Java编程，熟悉Spring、MyBatis等许多Java库以及框架，熟练使用gradle，maven等构建工具，良好的编码规范；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  对前端性能优化有一定了解，了解WebKit、V8垃圾回收机制，对跨浏览器兼容有一定经验；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉ActionScript3，有实际项目使用经验；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉数据可视化，有使用HighCharts进行数据可视化的开发经验；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉PHP，有Yii框架的实际项目经验，使用Discuz并经过简单二次开发搭建过公司产品论坛以及对接公司用户数据。也比较熟悉python和django框架；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  喜欢折腾Linux，工作环境为Ubuntu12.04，熟悉nginx负载、apache虚拟主机的配置；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉SVN，熟练使用Git，Git爱好者，最早在公司建议使用Git；
+                        p
+                            .glyphicon.glyphicon-record
+                            span  熟悉mysql，mongodb，redis，能写较为复杂的mysql查询；
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-calendar
+                        span  工作经历
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-record
+                            span  2013-07 - 2014-03 群硕软件开发有限公司
+                            :markdown
+                                > 主要负责开发公司内部__HelpDesk__系统，产品社区网站，
+                                开发语言主要为Java，PHP以及JavaScript。
+                        p
+                            .glyphicon.glyphicon-record
+                            span  2014-03 - 现在 上海名传信息技术有限公司
+                            :markdown
+                                > 负责公司主要产品的开发维护，前端模块的设计以及重构，产品论坛的搭建维护，
+                                > 以及内部项目的独立开发。
+                                > 主要开发语言为Java，PHP，NodeJS／JavaScript。
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-education
+                        span  教育经历
+                .col-md-9
+                    .resume-item
+                        p
+                            .glyphicon.glyphicon-record
+                            span  2009-09 - 2013-06 北方民族大学  数学与应用数学   本科
+                .col-md-3
+                    h4
+                        .glyphicon.glyphicon-heart-empty
+                        span  简介｜爱好
+                .col-md-9
+                    .resume-item
+                        p
+                            | 有责任感，能促使我独立完成自己的工作，不喜欢给队友埋坑。好奇心强烈，对新鲜技术比较敏感。
+                            | 性格随和，多年朋友没见过我发脾气的样子！
+                            | 喜欢骑行，经常趁周末跟队友骑行100公里以上，享受流汗和不断前进的洒脱。
+                            | 喜欢编程，更享受程序带来的乐趣。
+

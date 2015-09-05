@@ -1,24 +1,39 @@
 html,
 body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    padding-top: 68px;
+    padding-top: 168px;
     font: 14px "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Tahoma, Arial;
-    background-color: #F8E9D6;
+    background-color: #F6F8F4;
+    color: #5f5a5a;
+    font-size: 14px;
 }
 
-a {
-    color: #00B7FF;
+blockquote {
+    font-size: 14px;
+    /*border: none;*/
 }
 
-.main-box {
+.container-fluid,
+.row {
     height: 100%;
-    background-color: #fff;
+}
+
+.resume-panel {
+    min-height: 100%;
     position: relative;
+    padding: 6px 26px;
+    bottom: 136px;
+    /*border: 1px solid #e1e1e1;*/
+    background-color: #fff;
+}
+
+.resume-item {
+    /*min-height: 100px;*/
+    padding: 0 50px 16px ;
+    /*border-bottom: 1px dashed #e1e1e1;*
 }
 
 .footer {
